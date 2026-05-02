@@ -2,7 +2,7 @@
 
 This project is an end-to-end Machine Learning pipeline designed to predict customer churn using the Telco Customer Churn dataset.
 
-## 🚀 Project Overview
+# Project Overview
 
 Customer churn is a critical metric for subscription-based businesses. This system predicts whether a customer is likely to leave ("churn") based on their demographics, usage patterns, and account information. 
 
@@ -13,7 +13,7 @@ Customer churn is a critical metric for subscription-based businesses. This syst
 - **Hyperparameter Tuning:** Uses `GridSearchCV` to optimize the Random Forest model.
 - **Interactive UI:** Deploys the predictive model using an interactive Streamlit dashboard.
 
-## 🧰 Tech Stack
+# Tech Stack
 - **Language:** Python
 - **Data Handling:** Pandas, NumPy
 - **Machine Learning:** scikit-learn
@@ -21,7 +21,7 @@ Customer churn is a critical metric for subscription-based businesses. This syst
 - **Model Serialization:** Pickle
 - **Web UI:** Streamlit
 
-## 📁 Project Structure
+# Project Structure
 ```text
 churn-project/
 │
@@ -38,35 +38,35 @@ churn-project/
 └── README.md                    # Project documentation
 ```
 
-## ⚙️ How to Run Locally
+# How to Run Locally
 
-### 1. Install Dependencies
+## 1. Install Dependencies
 Make sure you have Python installed. Run the following command:
 ```bash
 pip install -r requirements.txt
 ```
 
-### 2. Train the Model
+## 2. Train the Model
 Run the training script. This will process the data, train the models, save visualizations to `notebooks/`, and create the `churn_model.pkl` file.
 ```bash
 python train.py
 ```
 
-### 3. Run the Streamlit UI
+## 3. Run the Streamlit UI
 Launch the interactive web application to make predictions:
 ```bash
 streamlit run app.py
 ```
 
-## 📊 Key Findings & Model Evaluation
+# Key Findings & Model Evaluation
 During training, we evaluated models using Accuracy, Precision, Recall, and F1-Score. For churn prediction, **Recall** is often highly important, as we want to capture as many potential churners as possible, even at the cost of some false positives.
 
 *The exact metrics are printed to the console when running `train.py`.*
 
-**Feature Importance:**
+# Feature Importance:**
 The Random Forest model identified features such as `TotalCharges`, `MonthlyCharges`, `Tenure`, and `Contract type` as the most influential indicators of churn. (See `notebooks/feature_importance.png` after running the training script).
 
-## 💡 What Makes This Project Stand Out
+# What Makes This Project Stand Out
 - **"I built an end-to-end ML pipeline from preprocessing to deployment"**
 - **"Used Random Forest and improved performance via GridSearch tuning"**
 - **"Handled categorical data using encoding techniques and ensured robust prediction input handling"**
